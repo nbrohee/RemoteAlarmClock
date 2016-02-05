@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Description;
 
 namespace RemoteAlarmClock.Web.Controllers
 {
@@ -17,6 +18,12 @@ namespace RemoteAlarmClock.Web.Controllers
         public AlarmClockController(IAlarmClockManager alarmMananager)
         {
             _alarmManager = alarmMananager;
+        }
+
+        [ResponseType(typeof(AlarmClock))]
+        public HttpResponseMessage Get(int id)
+        {
+            return this.Request.CreateResponse<AlarmClock>(null);
         }
 
         // POST: api/Clock
