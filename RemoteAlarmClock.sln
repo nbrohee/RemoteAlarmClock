@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteAlarmClock.Web", "RemoteAlarmClock\RemoteAlarmClock.Web.csproj", "{7EA88134-9406-479A-AA4E-2886A1DCD2E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteAlarmClock.Specs.Tests", "RemoteAlarmClock.Tests\RemoteAlarmClock.Specs.Tests.csproj", "{1AA36B45-A4CD-451F-B328-14F9DF9EEE64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DFC46B9E-1081-4268-8244-63BB04D6C4FF}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteAlarmClock.Business", "RemoteAlarmClock.Business\RemoteAlarmClock.Business.csproj", "{44E28934-A649-45C8-885D-C84F801F50E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteAlarmClock.Common", "RemoteAlarmClock.Common\RemoteAlarmClock.Common.csproj", "{E8E346B3-DBAB-40D5-A24A-5559BFE794C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Shared", "00 - Shared", "{7799F217-704E-496F-B312-9A3C68F5F545}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{FC5AAE35-23C7-45B3-918F-0235F50B9C76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Business", "02 - Business", "{29AB9777-C08E-4AAA-9E7A-D3AA4BC37082}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - DataAccess", "03 - DataAccess", "{338E76E0-B6C9-4094-B941-37B1C7BDDC09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Test", "04 - Test", "{89425A00-FCCA-4165-B504-9109DB86CFFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteAlarmClock.BusinessShared", "RemoteAlarmClock.BusinessShared\RemoteAlarmClock.BusinessShared.csproj", "{60FF158B-6528-4C05-8ECA-CC5D587D5487}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EA88134-9406-479A-AA4E-2886A1DCD2E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EA88134-9406-479A-AA4E-2886A1DCD2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EA88134-9406-479A-AA4E-2886A1DCD2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EA88134-9406-479A-AA4E-2886A1DCD2E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA36B45-A4CD-451F-B328-14F9DF9EEE64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA36B45-A4CD-451F-B328-14F9DF9EEE64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA36B45-A4CD-451F-B328-14F9DF9EEE64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA36B45-A4CD-451F-B328-14F9DF9EEE64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44E28934-A649-45C8-885D-C84F801F50E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44E28934-A649-45C8-885D-C84F801F50E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44E28934-A649-45C8-885D-C84F801F50E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44E28934-A649-45C8-885D-C84F801F50E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8E346B3-DBAB-40D5-A24A-5559BFE794C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E346B3-DBAB-40D5-A24A-5559BFE794C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E346B3-DBAB-40D5-A24A-5559BFE794C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E346B3-DBAB-40D5-A24A-5559BFE794C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60FF158B-6528-4C05-8ECA-CC5D587D5487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60FF158B-6528-4C05-8ECA-CC5D587D5487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60FF158B-6528-4C05-8ECA-CC5D587D5487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60FF158B-6528-4C05-8ECA-CC5D587D5487}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7EA88134-9406-479A-AA4E-2886A1DCD2E8} = {FC5AAE35-23C7-45B3-918F-0235F50B9C76}
+		{1AA36B45-A4CD-451F-B328-14F9DF9EEE64} = {89425A00-FCCA-4165-B504-9109DB86CFFA}
+		{44E28934-A649-45C8-885D-C84F801F50E3} = {29AB9777-C08E-4AAA-9E7A-D3AA4BC37082}
+		{E8E346B3-DBAB-40D5-A24A-5559BFE794C9} = {7799F217-704E-496F-B312-9A3C68F5F545}
+		{60FF158B-6528-4C05-8ECA-CC5D587D5487} = {29AB9777-C08E-4AAA-9E7A-D3AA4BC37082}
+	EndGlobalSection
+EndGlobal
