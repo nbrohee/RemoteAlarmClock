@@ -14,5 +14,11 @@ namespace RemoteAlarmClock.BusinessShared
         /// </summary>
         /// <param name="newAlarm"></param>
         void SetAlarmClock(AlarmClock newAlarm);
+
+        /// <summary>
+        /// Check if any alarm is ringing
+        /// </summary>
+        /// <returns>true if any alarm is past due</returns>
+        bool IsAlarmRinging();
     }
 }

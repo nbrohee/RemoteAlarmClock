@@ -1,9 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteAlarmClock.Web", "RemoteAlarmClock\RemoteAlarmClock.Web.csproj", "{7EA88134-9406-479A-AA4E-2886A1DCD2E8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1280C7EB-0FFC-4CB2-9F42-19D25A781CD8} = {1280C7EB-0FFC-4CB2-9F42-19D25A781CD8}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteAlarmClock.Specs.Tests", "RemoteAlarmClock.Tests\RemoteAlarmClock.Specs.Tests.csproj", "{1AA36B45-A4CD-451F-B328-14F9DF9EEE64}"
 EndProject
@@ -11,10 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DFC46B
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteAlarmClock.Business", "RemoteAlarmClock.Business\RemoteAlarmClock.Business.csproj", "{44E28934-A649-45C8-885D-C84F801F50E3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteAlarmClock.Common", "RemoteAlarmClock.Common\RemoteAlarmClock.Common.csproj", "{E8E346B3-DBAB-40D5-A24A-5559BFE794C9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Shared", "00 - Shared", "{7799F217-704E-496F-B312-9A3C68F5F545}"
 EndProject
@@ -27,6 +26,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Test", "04 - Test", "{89425A00-FCCA-4165-B504-9109DB86CFFA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteAlarmClock.BusinessShared", "RemoteAlarmClock.BusinessShared\RemoteAlarmClock.BusinessShared.csproj", "{60FF158B-6528-4C05-8ECA-CC5D587D5487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteAlarmClock.Common", "RemoteAlarmClock.Common\RemoteAlarmClock.Common.csproj", "{AD3AAFC1-200A-44CF-98A1-9A93EFBA9B82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteAlarmClock.Business", "RemoteAlarmClock.Business\RemoteAlarmClock.Business.csproj", "{1280C7EB-0FFC-4CB2-9F42-19D25A781CD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,18 +45,18 @@ Global
 		{1AA36B45-A4CD-451F-B328-14F9DF9EEE64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AA36B45-A4CD-451F-B328-14F9DF9EEE64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AA36B45-A4CD-451F-B328-14F9DF9EEE64}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44E28934-A649-45C8-885D-C84F801F50E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44E28934-A649-45C8-885D-C84F801F50E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44E28934-A649-45C8-885D-C84F801F50E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44E28934-A649-45C8-885D-C84F801F50E3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E8E346B3-DBAB-40D5-A24A-5559BFE794C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8E346B3-DBAB-40D5-A24A-5559BFE794C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8E346B3-DBAB-40D5-A24A-5559BFE794C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8E346B3-DBAB-40D5-A24A-5559BFE794C9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{60FF158B-6528-4C05-8ECA-CC5D587D5487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{60FF158B-6528-4C05-8ECA-CC5D587D5487}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60FF158B-6528-4C05-8ECA-CC5D587D5487}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60FF158B-6528-4C05-8ECA-CC5D587D5487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3AAFC1-200A-44CF-98A1-9A93EFBA9B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3AAFC1-200A-44CF-98A1-9A93EFBA9B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3AAFC1-200A-44CF-98A1-9A93EFBA9B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3AAFC1-200A-44CF-98A1-9A93EFBA9B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1280C7EB-0FFC-4CB2-9F42-19D25A781CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1280C7EB-0FFC-4CB2-9F42-19D25A781CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1280C7EB-0FFC-4CB2-9F42-19D25A781CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1280C7EB-0FFC-4CB2-9F42-19D25A781CD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,8 +64,11 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7EA88134-9406-479A-AA4E-2886A1DCD2E8} = {FC5AAE35-23C7-45B3-918F-0235F50B9C76}
 		{1AA36B45-A4CD-451F-B328-14F9DF9EEE64} = {89425A00-FCCA-4165-B504-9109DB86CFFA}
-		{44E28934-A649-45C8-885D-C84F801F50E3} = {29AB9777-C08E-4AAA-9E7A-D3AA4BC37082}
-		{E8E346B3-DBAB-40D5-A24A-5559BFE794C9} = {7799F217-704E-496F-B312-9A3C68F5F545}
 		{60FF158B-6528-4C05-8ECA-CC5D587D5487} = {29AB9777-C08E-4AAA-9E7A-D3AA4BC37082}
+		{AD3AAFC1-200A-44CF-98A1-9A93EFBA9B82} = {7799F217-704E-496F-B312-9A3C68F5F545}
+		{1280C7EB-0FFC-4CB2-9F42-19D25A781CD8} = {29AB9777-C08E-4AAA-9E7A-D3AA4BC37082}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDE766A9-7495-4E1B-AD43-28AED32AFB99}
 	EndGlobalSection
 EndGlobal

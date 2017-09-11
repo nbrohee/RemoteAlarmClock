@@ -25,6 +25,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -81,9 +82,9 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
@@ -164,12 +165,8 @@
       <Project>{60ff158b-6528-4c05-8eca-cc5d587d5487}</Project>
       <Name>RemoteAlarmClock.BusinessShared</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RemoteAlarmClock.Business\RemoteAlarmClock.Business.csproj">
-      <Project>{44e28934-a649-45c8-885d-c84f801f50e3}</Project>
-      <Name>RemoteAlarmClock.Business</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RemoteAlarmClock.Common\RemoteAlarmClock.Common.csproj">
-      <Project>{e8e346b3-dbab-40d5-a24a-5559bfe794c9}</Project>
+      <Project>{ad3aafc1-200a-44cf-98a1-9a93efba9b82}</Project>
       <Name>RemoteAlarmClock.Common</Name>
     </ProjectReference>
   </ItemGroup>

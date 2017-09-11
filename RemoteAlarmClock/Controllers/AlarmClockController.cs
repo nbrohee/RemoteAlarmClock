@@ -1,5 +1,4 @@
-﻿using RemoteAlarmClock.Business;
-using RemoteAlarmClock.BusinessShared;
+﻿using RemoteAlarmClock.BusinessShared;
 using RemoteAlarmClock.Common;
 using System;
 using System.Collections.Generic;

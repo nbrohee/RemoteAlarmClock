@@ -37,7 +37,7 @@ namespace RemoteAlarmClock.Web.Tests
         public void ThenTheComputerMustRingAtTheAlarmSetTime()
         {
             Thread.Sleep(2000);
-            Assert.IsTrue(_alarmManager.IsAlarmRinging);
+            Assert.IsTrue(_alarmManager.IsAlarmRinging());
         }
     }
 }
